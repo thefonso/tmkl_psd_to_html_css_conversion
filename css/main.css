@@ -23,24 +23,70 @@ header{
 .clearboth{
 	clear: both;
 }
+@font-face {
+	font-family: 'GothamBook';
+	src: url('../fonts/gotham_light.ttf') format('truetype');
+  src: local('gothambook'), url('../fonts/gotham_light.ttf'); format('truetype'); /* For non-IE */ 
+}
+
 /*Header*/
+
+/*Header Ends*/
+
 
 
 
 /*Body*/
 #body_wrapper_960{  
-  width: 960px;
+  width: 962px;
 	margin-left: auto;
 	margin-right: auto;
 }
 #three_boxs{
   width: 30%;
 }
+#client_logos{
+/*  NOTE - would prefer to use :before and :after but IE 7 does not support it */
+  background-image: url('../images/client_logos_bg_wide.png');
+  width:962px;
+  height:111px;
+}
+
+#client_logos #text_container{
+  padding-top: 35px;
+}
+
+#client_logos .clients{
+  text-decoration: none;
+  color:grey;
+  font-family:'GothamBook';
+
+	text-align: left;
+	font-size: 28px;
+	text-shadow: 1px 1px #fff;
+  text-transform: uppercase;
+
+  display: inline;
+  text-align:center;      /* center horizontally */
+  vertical-align:middle;  /* center vertically */
+}
+
+#client_logos ul{
+  padding-top: 20px;
+}
+#client_logos ul li{
+  padding-top: 20px;
+  padding-left:20px;
+  display: inline;
+}
+/*Body Ends*/
+
+
 
 /*Footer*/
 footer{
   background-image: url('../images/footer_bg.png');
   background-repeat: repeat-x;
   height:226px; 
-  width:1800;
+  width:1800px;
 }
