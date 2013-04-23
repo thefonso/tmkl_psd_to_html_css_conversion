@@ -4,13 +4,43 @@ ul{
   padding: 0;
   list-style: none;
 }
-
+html,body{
+	height: 100%;
+	margin: 0;
+}
+header{
+  background-image: url('../images/header_bg.jpg');
+  width:1800px;
+  height:508px;
+}
+.float_right{
+	float: right;
+}
+.float_left{
+	float: left;
+}
+/*needed to cause auto expansion of container div*/
+.clearboth{
+	clear: both;
+}
 /*Header*/
 
 
 
 /*Body*/
-
-
+#body_wrapper_960{  
+  width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#three_boxs{
+  width: 30%;
+}
 
 /*Footer*/
+footer{
+  background-image: url('../images/footer_bg.png');
+  background-repeat: repeat-x;
+  height:226px; 
+  width:1800;
+}
