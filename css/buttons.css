@@ -1,0 +1,291 @@
+/*Button One*/
+#button-one{
+
+}
+
+#button-one li{
+  background: #eee;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #f5f5f5 #e5e5e5 #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 2px rgba(0,0,0,.2);
+  float: left;
+}
+
+#button-one a{
+
+/*  overflow: hidden;*/
+/*  width: 10%;*/
+  
+  padding: .8em 1em .8em 2em;
+  float: left;
+  text-decoration: none;
+  color: #444;
+  position: relative;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  background-color: #ddd;
+  background-image: linear-gradient(to right, #f5f5f5, #ddd);  
+}
+
+#button-one li:first-child a{
+  padding-left: 1em;
+  border-radius: 5px 0 0 5px;
+}
+
+#button-one a:hover{
+  background: #fff;
+}
+
+#button-one a::after,
+#button-one a::before{
+  content: "";
+  position: absolute;
+  top: 51%;
+  margin-top: -1.4em;   
+  border-top: 1.42em solid transparent;
+  border-bottom: 1.42em solid transparent;
+  border-left: 1.5em solid;
+  right: -1.5em;
+}
+
+#button-one a::after{ 
+  
+  z-index: 2;
+  border-left-color: #ddd;  
+}
+#button-one a:hover::after{
+  border-left-color: #fff;
+}
+
+#button-one a::before{
+  border-left-color: #ccc;  
+  right: -1.5em;
+  z-index: 1; 
+}
+
+
+/*Button One end*/
+
+
+
+
+
+
+
+/*Button Two*/
+#button-two{
+  overflow: hidden;
+  width: 100%;
+}
+
+#button-two li{
+  float: left;
+  margin: 0 .5em 0 1em;
+}
+
+#button-two a{
+  background: #ddd;
+  padding: .7em 1em;
+  float: left;
+  text-decoration: none;
+  color: #444;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5); 
+  position: relative;
+  border-radius: .4em 0 0 .4em;  
+}
+
+#button-two a:hover{
+  background: #99db76;
+}
+
+#button-two a::after{
+  content: "";
+  position: absolute;
+  top: 50%; 
+  margin-top: -1.5em;   
+  border-top: 1.5em solid transparent;
+  border-bottom: 1.5em solid transparent;
+  border-left: 1em solid #ddd;
+  right: -1em;
+  border-radius: .4em 0 0 .4em;  
+}
+
+#button-two a:hover::after{
+  border-left-color: #99db76;
+}
+
+#button-two .current,
+#button-two .current:hover{
+  font-weight: bold;
+  background: none;
+}
+
+#button-two .current::after,
+#button-two .current::before{
+  content: normal;
+}
+/*Button Two Ends*/
+
+
+
+
+
+
+
+/*Button Three*/
+#button-three{
+  overflow: hidden;
+  width: 100%;
+}
+
+#button-three li{
+  float: left;
+  margin: 0 2em 0 0;
+}
+
+#button-three a{
+  padding: .7em 1em .7em 2em;
+  float: left;
+  text-decoration: none;
+  color: #444;
+  background: #ddd;  
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  border-radius: .4em 0 0 .4em;  
+}
+
+#button-three a:hover{
+  background: #abe0ef;
+}
+
+#button-three a::after{
+  background: #ddd;
+  content: "";
+  height: 2.5em;
+  margin-top: -1.25em;
+  position: absolute;
+  right: -1em;
+  top: 50%;
+  width: 2.5em;
+  z-index: -1;
+  border-radius: .2em;  
+  -webkit-transform: rotate(45deg);
+  -webkit-transition: -webkit-transform .15s linear;
+  -moz-transform: rotate(45deg);
+}
+
+#button-three a:hover::after{
+  background: #abe0ef;
+}
+
+#button-three .current,
+#button-three .current:hover{
+  font-weight: bold;
+  background: none;
+}
+
+#button-three .current::after{
+  content: normal;
+}
+/*Button Three Ends*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Button four*/
+#button-four{
+  overflow: hidden;
+  width: 100%;
+}
+
+#button-four li{
+  float: left;
+  margin: 0 2em 0 0;
+}
+
+#button-four a{
+  padding: .7em 1em .7em 2em;
+  float: left;
+  text-decoration: none; 
+  position: relative;
+  z-index: 1;
+  border-radius: .4em 0 0 .4em;  
+  
+  color: #FFF;
+  background: #7a9cad;
+  background: -moz-linear-gradient(top, #7a9cad 0%, #5e7784 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7a9cad), color-stop(100%,#5e7784));
+  background: -webkit-linear-gradient(top, #7a9cad 0%,#5e7784 100%);
+  background: -o-linear-gradient(top, #7a9cad 0%,#5e7784 100%);
+  background: -ms-linear-gradient(top, #7a9cad 0%,#5e7784 100%);
+  background: linear-gradient(to bottom, #7a9cad 0%,#5e7784 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=’#7a9cad’, endColorstr=’#5e7784’,GradientType=0 );
+  border: 1px solid #4d626d;
+  box-shadow: 0px 1px 1px #98c1d7 inset;
+  text-shadow: 1px 1px #00514d;
+  font-family: 'Open Sans', serif;
+  font-weight: 600;
+}
+
+#button-four a:hover{
+  background: #abe0ef;
+}
+
+#button-four a::after{
+  content: "";
+  height: 2.1em;
+  width:  2.1em;
+  margin-top: -1.0em;
+  position: absolute;
+  right: -1.1em;
+  top: 50%;
+
+  z-index: -1;
+/*  border-radius: .2em;  */
+  -webkit-transform: rotate(45deg);
+  -webkit-transition: -webkit-transform .15s linear;
+  -moz-transform: rotate(45deg);
+  
+  color: #FFF;
+  background: #7a9cad;
+  background: -moz-linear-gradient(90deg, #7a9cad 0%, #5e7784 100%);
+  background: -webkit-gradient(linear, 90deg, color-stop(0%,#7a9cad), color-stop(100%,#5e7784));
+  background: -webkit-linear-gradient(90deg, #7a9cad 0%,#5e7784 100%);
+  background: -o-linear-gradient(90deg, #7a9cad 0%,#5e7784 100%);
+  background: -ms-linear-gradient(90deg, #7a9cad 0%,#5e7784 100%);
+  background: linear-gradient(135deg, #7a9cad 0%,#5e7784 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=’#7a9cad’, endColorstr=’#5e7784’,GradientType=0 );
+  border-top: 1px solid #4d626d;
+  border-right:1px solid #4d626d;
+  box-shadow: 0px 1px 0px #98c1d7 inset;
+  text-shadow: 1px 1px #00514d;
+  font-family: 'Open Sans', serif;
+  font-weight: 600;
+}
+
+#button-four a:hover::after{
+  background: #abe0ef;
+}
+
+#button-four .current,
+#button-four .current:hover{
+  font-weight: bold;
+  background: none;
+}
+
+#button-four .current::after{
+  content: normal;
+}
+/*Button four Ends*/
