@@ -42,9 +42,21 @@ header{
 	margin-left: auto;
 	margin-right: auto;
 }
-#three_boxs{
+#box_first{
   width: 30%;
+  padding-bottom: 55px;
+  padding-left: 30px;
 }
+#box_second{
+  width: 30%;
+  padding-bottom: 55px;
+}
+#box_third{
+  width: 30%;
+  padding-bottom: 55px;
+}
+
+
 #client_logos{
 /*  NOTE - would prefer to use :before and :after but IE 7 does not support it */
   background-image: url('../images/client_logos_bg_wide.png');
