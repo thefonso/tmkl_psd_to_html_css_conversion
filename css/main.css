@@ -1,17 +1,7 @@
 /*HTML reset*/
-ul{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
 html,body{
 	height: 100%;
 	margin: 0;
-}
-header{
-  background-image: url('../images/header_bg.jpg');
-  width:1800px;
-  height:508px;
 }
 .float_right{
 	float: right;
@@ -19,27 +9,28 @@ header{
 .float_left{
 	float: left;
 }
-
-.clearfix:before,
-.cf:before,
-.clearfix:after,
-.cf:after,
-.wrap:before,
-.wrap:after {
-  content:"";
-  display:table;
-}
-
-.clearfix:after,
-.cf:after,
-.wrap:after {
-  clear:both;
-}
-
 /*needed to cause auto expansion of container div*/
 .clearboth{
 	clear: both;
 }
+#bodywrapper{
+	border: 0px dashed #F90A1F;
+	width: 1800px;
+	margin-right:   auto;
+	margin-bottom: 	0;
+	margin-left: 	auto;
+	
+	min-height: 100%;
+	min-height: 600px;
+	height: auto !important;
+	height: 100%;
+}
+
+
+/*HTML reset Ends*/
+
+
+
 @font-face {
 	font-family: 'GothamBook';
 	src: url('../fonts/gotham_light.ttf') format('truetype');
@@ -47,7 +38,11 @@ header{
 }
 
 /*Header*/
-
+header{
+  background-image: url('../images/header_bg.jpg');
+  width:1800px;
+  height:508px;
+}
 /*Header Ends*/
 
 
@@ -127,6 +122,12 @@ footer{
   background-repeat: repeat-none;
   height:173px; 
   width:568px;
+}
+
+#tweetbox p{
+  color: #FFF;
+  font-family: 'Open Sans', serif;
+  font-weight: 300;
 }
 
 /* Social Icon Sprite Begins */
