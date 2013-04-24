@@ -184,19 +184,73 @@ footer{
   height:226px; 
   width:1800px;
 }
+#footer_wrapper{
+  padding-top:33px;
+}
+#footer_wrapper h1{
+  color: #FFF;
+  font-family: 'HelveticaNeue', serif;
+  font-size: 19px;
+  text-shadow: 1px 1px #000;
+  font-weight: 300;
+}
 
-#tweetbox{
+#tweet_box{
   background-image: url('../images/twitter_block_n_bird.png');
   background-repeat: repeat-none;
   height:173px; 
   width:568px;
+  margin-right:48px;
+}
+#tweet_content p{
+  font: normal normal normal .72em Helvetica, sans-serif;
+  color:#808080;
+}
+#tweet_content p em{
+  color:#ffffff;
+}
+#tweet_content{
+  padding-top:28px;
+  padding-left:30px;
+  padding-right:43px;
 }
 
-#tweetbox p{
-  color: #FFF;
-  font-family: 'Open Sans', serif;
-  font-weight: 300;
+#nav_title{
+  padding-bottom:10px;
 }
+#navigate_box ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+} 
+
+#navigate_box ul li{
+  display: inline;
+  font: normal normal normal .9em Helvetica, sans-serif;
+  color:#808080;
+  padding: .1em .3em;
+} 
+
+#navigate_box ul li a{
+  text-decoration: none;
+  font: normal normal normal 1em Helvetica, sans-serif;
+  color:#808080;
+} 
+
+#social_title{
+  padding-top:38px;
+}
+#social_box{
+  padding-top:32px;
+  padding-left:37px;
+}
+#copyright{
+  padding-top:32px;
+  font: normal normal normal .7em Arial, sans-serif;
+  color:#515151;
+}
+
+
 
 /* Social Icon Sprite Begins */
 .tkml-social-icons a {
