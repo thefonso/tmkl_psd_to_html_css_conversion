@@ -204,12 +204,42 @@ color: #fff;
 /*Header Ends*/
 
 
+
 /*Slider Begins*/
 .slider-wrapper { 
 	width: 50%; 
-	margin: 100px auto;
+/*  margin: 100px auto;*/
+}
+#slider_textbox{
+  margin-top: 10%;
+  width: 50%;
+}
+#slider_textbox h2{
+  color:#303030;
+  font-style: normal;
+/*  font-family:'HelveticaNeue';*/
+  font-family: Helvetica, Arial, "MS Trebuchet", sans-serif;
+  font-weight: bold;
+	font-size: 30px;
+  display: inline;
+} 
+#slider_textbox p{
+  color:#6d6d6d;
+  text-decoration: none;
+  font-family:'GothamBook';
+	font-size: 14px;
+  display: inline;
+}
+#slider_textbox .content{
+  padding-top:    10px;
+  padding-bottom: 10px;
+}
+#slider_textbox img{
+  padding-top:    35px;
+  padding-bottom: 15px;
 }
 /*Slider Ends*/
+
 
 
 /*Body*/
@@ -250,7 +280,9 @@ color: #fff;
 #three_boxs h2{
   color:#303030;
   font-style: normal;
-  font-family:'HelveticaNeue';
+/*  font-family:'HelveticaNeue';*/
+  font-family: Helvetica, Arial, "MS Trebuchet", sans-serif;
+  font-weight: bold;
 	font-size: 22px;
   display: inline;
 } 

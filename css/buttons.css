@@ -28,11 +28,27 @@
 
 
 /*Button two*/
-#button-two{
-
+#button-two ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+#button-two ul li{
+  display: inline;
 }
 #button-two a{
-  background-image: url('../images/button_large.png');
+  background: url('../images/button_large.png') no-repeat;
+  width: 185px;
+  height: 46px;
+  display: inline-block;
+  padding: .8em 1em .8em 2em;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Open Sans', serif;
+  font-weight: 300;  
+  position: relative;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
 }
 /*Button two Ends*/
 
