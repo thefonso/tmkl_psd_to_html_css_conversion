@@ -52,8 +52,11 @@ table {
 
 
 /*HTML reset Ends*/
-
-
+@font-face {
+	font-family: 'BrushScript';
+	src: url('../fonts/brushscript.ttf') format('truetype');
+  src: local('brushscript'), url('../fonts/brushscript.ttf') format('truetype'); /* For non-IE */ 
+}
 @font-face {
 	font-family: 'GothamBook';
 	src: url('../fonts/gotham_book.ttf') format('truetype');
@@ -143,13 +146,58 @@ nav ul li a:hover
 {
 color: #fff;
 }
+#tkml_title{
+  margin:auto;
+  width:95%;
+  text-align: center;
+  vertical-align: middle;
+}
+#tkml_title li{
+  font-family:'GothamBook_light',Serif;
+  color:#c2c2c2;
+	font-size: 42px;
+  display: inline;
+}
+#tkml_title li em.bold{
+  font-family:'GothamBook_medium',Serif;
+  color:#c2c2c2;
+	font-size: 42px;
+  display: inline;
+}
+#tkml_title li em.brush{
+  font-family:'BrushScript',Serif;
+  color:#c2c2c2;
+	font-size: 42px;
+  display: inline;
+}
+
+
+#tkml_main_text{
+  margin:auto;
+  width:95%;
+  text-align: center;
+  vertical-align: middle;
+}
+#tkml_main_text li{
+  font-family:'GothamBook_light',Serif;
+  color:#c2c2c2;
+	font-size: 20px;
+  display: inline;
+}
+#tkml_main_text li em.bold{
+  font-family:'GothamBook_medium',Serif;
+  color:#c2c2c2;
+	font-size: 20px;
+  display: inline;
+}
 /*Header Ends*/
 
 
 
 
 /*Body*/
-#body_wrapper_960{  
+#body_wrapper_960{
+    
   width: 962px;
 	margin-left: auto;
 	margin-right: auto;
