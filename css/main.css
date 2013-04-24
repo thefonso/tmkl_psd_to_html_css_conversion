@@ -126,44 +126,58 @@ table {
 .slider-wrapper { 
   z-index:200;
 	width: 55%;
-  margin-top: 54px;
+  margin-top: 2.8em;
   margin-left:auto;
   margin-right:auto;
   position:absolute;
 }
-#place_holder{
+#place_holder {
   z-index:10;
-  width: 60%;
+}
+/*using if then else javascript from css_browser_selector*/
+.chrome #place_holder {
+  width: 65%;
+}
+.gecko #place_holder {
+  width: 65%;
 }
 #slider_textbox{
   z-index:10;
-  margin-top: 26%;
-  margin-bottom: 5%;
-  width: 40%;
 }
+.chrome #slider_textbox{
+  margin-top: 15.6em;
+  margin-bottom: 4.5em;
+  width: 35%;
+}
+.gecko #slider_textbox{
+  margin-top: 16em;
+  margin-bottom: 4.5em;
+  width: 35%;
+}
+
 #slider_textbox h2{
   color:#303030;
   font-style: normal;
 /*  font-family:'HelveticaNeue';*/
   font-family: Helvetica, Arial, "MS Trebuchet", sans-serif;
   font-weight: bold;
-	font-size: 30px;
+	font-size: 1.5em;
   display: inline;
 } 
 #slider_textbox p{
   color:#6d6d6d;
   text-decoration: none;
   font-family:'GothamBook';
-	font-size: 14px;
+	font-size: .8em;
   display: inline;
 }
 #slider_textbox .content{
-  padding-top:    10px;
-  padding-bottom: 10px;
+  padding-top:    .8em;
+  padding-bottom: .8em;
 }
 #slider_textbox img{
-  padding-top:    35px;
-  padding-bottom: 15px;
+/*  padding-top:    3em;*/
+/*  padding-bottom: 1.5em;*/
 }
 /*Slider Ends*/
 
@@ -172,11 +186,13 @@ table {
 /*Body*/
 #body_wrapper_960{   
   width: 962px;
+/*  widht: 80%; responsive*/
 	margin-left: auto;
 	margin-right: auto;
 }
 #body_wrapper_1024{   
   width: 1024px;
+/*  width: 90%; responsive */
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -185,8 +201,8 @@ table {
   border-bottom:  1px solid #999;
   text-align: center;
   vertical-align: middle;
-  height:50px;
-  line-height:50px;
+  height:         4em;
+  line-height:    4em;
 }
 #banner ul{
   margin: .4em;
@@ -196,7 +212,7 @@ table {
 #banner ul li{
   color:#303030;
   text-decoration: none;
-	font-size: 28px;
+	font-size: 2em;
   display: inline;
   padding-top:    .1em;
   padding-right:  .1em;
@@ -215,61 +231,63 @@ table {
 /*  font-family:'HelveticaNeue';*/
   font-family: Helvetica, Arial, "MS Trebuchet", sans-serif;
   font-weight: bold;
-	font-size: 22px;
+	font-size: 1.2em;
   display: inline;
 } 
 #three_boxs p{
   color:#6d6d6d;
   text-decoration: none;
   font-family:'GothamBook';
-	font-size: 12px;
+	font-size: .8em;
   display: inline;
 }
 #three_boxs .content{
-  padding-top:    10px;
-  padding-bottom: 10px;
+  padding-top:    .8em;
+  padding-bottom: .8em;
 }
 #three_boxs img{
-  padding-top:    35px;
-  padding-bottom: 15px;
+  padding-top:    3em;
+  padding-bottom: 1em;
 }
 
 #box_first{
   width: 30%;
-  padding-bottom: 55px;
-  padding-left:   30px;
+  padding-bottom: 3em;
+  padding-left:   2em;
 }
 #box_second{
   width: 30%;
-  padding-bottom: 55px;
+  padding-bottom: 3em;
+  padding-left:   1.8em;
+  padding-right:  1.8em;
 }
 #box_third{
   width: 30%;
-  padding-bottom: 55px;
+  padding-bottom: 3em;
 }
 
 
 #client_logos{
 /*  NOTE - would prefer to use :before and :after but IE 7 does not support it */
-  background-image: url('../images/client_logos_bg_wide.png');
-  background-repeat: repeat-x;
-  width:962px;
-  height:111px;
-  padding-bottom: 52px;
+  background-image:   url('../images/client_logos_bg_wide.png');
+  background-repeat:  repeat-x;
+  width:              100%;
+  height:             111px;
+  padding-bottom:     3em;
 }
 
 #client_logos #text_container{
-  padding-top: 35px;
+  padding-top: 1.9em;
 }
 
 #client_logos .clients{
   text-decoration: none;
-  color:grey;
+  color:#999;
   font-family:'GothamBook';
 
 	text-align: left;
-	font-size: 28px;
-	text-shadow: 1px 1px #fff;
+	font-size: 1.8em;
+	text-shadow: .055em .055em #fff;
   text-transform: uppercase;
 
   display: inline;
@@ -278,11 +296,11 @@ table {
 }
 
 #client_logos ul{
-  padding-top: 20px;
+  padding-top: 1.2em;
 }
 #client_logos ul li{
-  padding-top: 20px;
-  padding-left:20px;
+  padding-top: 1.2em;
+  padding-left:1.2em;
   display: inline;
 }
 /*Body Ends*/
