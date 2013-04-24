@@ -1,0 +1,123 @@
+
+
+/*Footer Begins*/
+footer{
+  background-image: url('../images/footer_bg.png');
+  background-repeat: repeat-x;
+  height:226px; 
+  width:1800px;
+}
+#footer_wrapper{
+  padding-top:33px;
+}
+#footer_wrapper h1{
+  color: #FFF;
+  font-family: 'HelveticaNeue', serif;
+  font-size: 19px;
+  text-shadow: 1px 1px #000;
+  font-weight: 300;
+}
+
+#tweet_box{
+  background-image: url('../images/twitter_block_n_bird.png');
+  background-repeat: repeat-none;
+  height:173px; 
+  width:568px;
+  margin-right:48px;
+}
+#tweet_content p{
+  font: normal normal normal .72em Helvetica, sans-serif;
+  color:#808080;
+}
+#tweet_content p em{
+  color:#ffffff;
+}
+#tweet_content{
+  padding-top:28px;
+  padding-left:30px;
+  padding-right:43px;
+}
+
+#nav_title{
+  padding-bottom:10px;
+}
+#navigate_box ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+} 
+
+#navigate_box ul li{
+  display: inline;
+  font: normal normal normal .9em Helvetica, sans-serif;
+  color:#808080;
+  padding: .1em .3em;
+} 
+
+#navigate_box ul li a{
+  text-decoration: none;
+  font: normal normal normal 1em Helvetica, sans-serif;
+  color:#808080;
+} 
+
+#social_title{
+  padding-top:38px;
+}
+#social_box{
+  padding-top:32px;
+  padding-left:37px;
+}
+#copyright{
+  padding-top:32px;
+  font: normal normal normal .7em Arial, sans-serif;
+  color:#515151;
+}
+
+/*Footer Ends*/
+
+/* Social Icon Sprite Begins */
+.tkml-social-icons a {
+	width: 28px;
+	height: 28px;
+	display: inline-block;
+	background: url(../images/social_sprite.png) no-repeat;
+	margin-right: 16px;
+}
+
+.tkml-social-icons a:last-child {
+	margin-right: 0;
+}
+
+.tkml-social-icons .icon-facebook {
+	background-position: 0 0;
+}
+
+.tkml-social-icons .icon-facebook:hover {
+	background-position: 0 -29px;
+}
+
+.tkml-social-icons .icon-twitter {
+	background-position: -42px 0;
+}
+
+.tkml-social-icons .icon-twitter:hover {
+	background-position: -42px -29px;
+}
+
+.tkml-social-icons .icon-google {
+	background-position: -84px 0;
+}
+
+.tkml-social-icons .icon-google:hover {
+	background-position: -84px -29px;
+}
+
+.tkml-social-icons .icon-youtube {
+	background-position: -126px 0;
+}
+
+.tkml-social-icons .icon-youtube:hover {
+	background-position: -126px -29px;
+}
+/* Social Icon Sprite Ends */
+

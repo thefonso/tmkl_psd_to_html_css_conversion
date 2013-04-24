@@ -31,7 +31,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+  color:#0d0d0d;
+  line-height: 1;
 }
 ol, ul {
 	list-style: none;
@@ -55,13 +56,23 @@ table {
 
 @font-face {
 	font-family: 'GothamBook';
+	src: url('../fonts/gotham_book.ttf') format('truetype');
+  src: local('gothambook'), url('../fonts/gotham_book.ttf') format('truetype'); /* For non-IE */ 
+}
+@font-face {
+	font-family: 'GothamBook_light';
 	src: url('../fonts/gotham_light.ttf') format('truetype');
-  src: local('gothambook'), url('../fonts/gotham_light.ttf'); format('truetype'); /* For non-IE */ 
+  src: local('gothambook_light'), url('../fonts/gotham_light.ttf') format('truetype'); /* For non-IE */ 
+}
+@font-face {
+	font-family: 'GothamBook_medium';
+	src: url('../fonts/gotham_medium.ttf') format('truetype');
+  src: local('gothambook_medium'), url('../fonts/gotham_medium.ttf') format('truetype'); /* For non-IE */ 
 }
 @font-face {
 	font-family: 'HelveticaNeue';
 	src: url('../fonts/helvetica_bdcn.otf') format('truetype');
-  src: local('helveticaneue'), url('../fonts/helvetica_bdcn.otf'); format('truetype'); /* For non-IE */ 
+  src: local('helveticaneue'), url('../fonts/helvetica_bdcn.otf') format('truetype'); /* For non-IE */ 
 }
 
 .float_right{
@@ -75,7 +86,16 @@ table {
 	clear: both;
 }
 
+/*frackin background*/
+body{
+/*  background:url('../images/main_backbround.jpg') no-repeat left top;*/
+/*  background-size: 100%;*/
+}
+
 #bodywrapper{
+  background:url('../images/main_backbround.jpg') no-repeat left top;
+  background-size: 100%;
+  
 	border: 0px dashed #F90A1F;
 	width: 1800px;
 	margin-right:   auto;
@@ -105,13 +125,42 @@ header{
 	margin-left: auto;
 	margin-right: auto;
 }
-#three_boxs h2{
-  color:#000;
+#banner{
+  border-top:     1px solid #999;
+  border-bottom:  1px solid #999;
+  text-align: center;
+  vertical-align: middle;
+  height:50px;
+  line-height:50px;
+}
+#banner ul{
+  margin: .4em;
+  padding: 0;
+  list-style-type: none;
+}
+#banner ul li{
+  color:#303030;
   text-decoration: none;
+	font-size: 28px;
+  display: inline;
+  padding-top:    .1em;
+  padding-right:  .1em;
+  padding-bottom: .1em;
+  padding-left:   .1em;
+}
+#banner li.one{
+  font-family:'GothamBook_medium';
+}
+#banner li.two{
+  font-family:'GothamBook_light';
+}
+#three_boxs h2{
+  color:#303030;
+  font-style: normal;
   font-family:'HelveticaNeue';
 	font-size: 22px;
   display: inline;
-}
+} 
 #three_boxs p{
   color:#6d6d6d;
   text-decoration: none;
@@ -119,11 +168,19 @@ header{
 	font-size: 12px;
   display: inline;
 }
+#three_boxs .content{
+  padding-top:    10px;
+  padding-bottom: 10px;
+}
+#three_boxs img{
+  padding-top:    35px;
+  padding-bottom: 15px;
+}
 
 #box_first{
   width: 30%;
   padding-bottom: 55px;
-  padding-left: 30px;
+  padding-left:   30px;
 }
 #box_second{
   width: 30%;
@@ -174,129 +231,6 @@ header{
 /*Body Ends*/
 
 
-
-
-
-/*Footer Begins*/
-footer{
-  background-image: url('../images/footer_bg.png');
-  background-repeat: repeat-x;
-  height:226px; 
-  width:1800px;
-}
-#footer_wrapper{
-  padding-top:33px;
-}
-#footer_wrapper h1{
-  color: #FFF;
-  font-family: 'HelveticaNeue', serif;
-  font-size: 19px;
-  text-shadow: 1px 1px #000;
-  font-weight: 300;
-}
-
-#tweet_box{
-  background-image: url('../images/twitter_block_n_bird.png');
-  background-repeat: repeat-none;
-  height:173px; 
-  width:568px;
-  margin-right:48px;
-}
-#tweet_content p{
-  font: normal normal normal .72em Helvetica, sans-serif;
-  color:#808080;
-}
-#tweet_content p em{
-  color:#ffffff;
-}
-#tweet_content{
-  padding-top:28px;
-  padding-left:30px;
-  padding-right:43px;
-}
-
-#nav_title{
-  padding-bottom:10px;
-}
-#navigate_box ul{
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-} 
-
-#navigate_box ul li{
-  display: inline;
-  font: normal normal normal .9em Helvetica, sans-serif;
-  color:#808080;
-  padding: .1em .3em;
-} 
-
-#navigate_box ul li a{
-  text-decoration: none;
-  font: normal normal normal 1em Helvetica, sans-serif;
-  color:#808080;
-} 
-
-#social_title{
-  padding-top:38px;
-}
-#social_box{
-  padding-top:32px;
-  padding-left:37px;
-}
-#copyright{
-  padding-top:32px;
-  font: normal normal normal .7em Arial, sans-serif;
-  color:#515151;
-}
-
-
-
-/* Social Icon Sprite Begins */
-.tkml-social-icons a {
-	width: 28px;
-	height: 28px;
-	display: inline-block;
-	background: url(../images/social_sprite.png) no-repeat;
-	margin-right: 16px;
-}
-
-.tkml-social-icons a:last-child {
-	margin-right: 0;
-}
-
-.tkml-social-icons .icon-facebook {
-	background-position: 0 0;
-}
-
-.tkml-social-icons .icon-facebook:hover {
-	background-position: 0 -29px;
-}
-
-.tkml-social-icons .icon-twitter {
-	background-position: -42px 0;
-}
-
-.tkml-social-icons .icon-twitter:hover {
-	background-position: -42px -29px;
-}
-
-.tkml-social-icons .icon-google {
-	background-position: -84px 0;
-}
-
-.tkml-social-icons .icon-google:hover {
-	background-position: -84px -29px;
-}
-
-.tkml-social-icons .icon-youtube {
-	background-position: -126px 0;
-}
-
-.tkml-social-icons .icon-youtube:hover {
-	background-position: -126px -29px;
-}
-/* Social Icon Sprite Ends */
 
 
 
