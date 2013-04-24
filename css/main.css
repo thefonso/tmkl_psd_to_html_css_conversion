@@ -100,7 +100,8 @@ body{
   background-size: 100%;
   
 	border: 0px dashed #F90A1F;
-	width: 100%;
+/*  width: 100%; change to this for responsive */
+	width: 1800px;
 	margin-right:   auto;
 	margin-bottom: 	0;
 	margin-left: 	auto;
@@ -207,12 +208,22 @@ color: #fff;
 
 /*Slider Begins*/
 .slider-wrapper { 
-	width: 50%; 
-/*  margin: 100px auto;*/
+  z-index:200;
+	width: 55%;
+  margin-top: 54px;
+  margin-left:auto;
+  margin-right:auto;
+  position:absolute;
+}
+#place_holder{
+  z-index:10;
+  width: 60%;
 }
 #slider_textbox{
-  margin-top: 10%;
-  width: 50%;
+  z-index:10;
+  margin-top: 26%;
+  margin-bottom: 5%;
+  width: 40%;
 }
 #slider_textbox h2{
   color:#303030;
@@ -245,6 +256,11 @@ color: #fff;
 /*Body*/
 #body_wrapper_960{   
   width: 962px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#body_wrapper_1024{   
+  width: 1024px;
 	margin-left: auto;
 	margin-right: auto;
 }
