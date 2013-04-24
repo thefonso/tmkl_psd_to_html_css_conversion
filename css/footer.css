@@ -5,7 +5,7 @@ footer{
   background-image: url('../images/footer_bg.png');
   background-repeat: repeat-x;
   height:226px; 
-  width:1800px;
+  width:100%;
 }
 #footer_wrapper{
   padding-top:33px;

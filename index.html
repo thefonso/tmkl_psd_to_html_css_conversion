@@ -5,9 +5,12 @@
     <link rel="stylesheet" href="css/main.css"></link>
     <link rel="stylesheet" href="css/footer.css"></link>
     <link rel="stylesheet" href="css/buttons.css"></link>
-    <script>
-      document.write("\<script src='http://code.jquery.com/jquery-latest.min.js' type='text/javascript'>\<\/script>");
-    </script>
+    <link rel="stylesheet" href="css/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/themes/light/light.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/themes/dark/dark.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/themes/bar/bar.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
   </head>
   <body>
     <div id="bodywrapper">
@@ -23,10 +26,7 @@
               <li><a href="#" class="main_nav_item">Jobs</a></li>
             </ul>
             <script>
-            $('.main_nav_item').hover(
-                   function(){ $(this).addClass('button-red') },
-                   function(){ $(this).removeClass('button-red') }
-            )
+
             </script>
           </nav>
           <div class="clearboth"></div> 
@@ -48,9 +48,25 @@
           <div id="main_title_line"></div>
         </div>
       </header>
+      
     
     <div id="body_wrapper_960">
- 
+      <!-- TODO - slider here -->
+      <div id="wrapper">
+
+          <div class="slider-wrapper theme-default">
+              <div id="slider" class="nivoSlider">
+                  <img src="images/toystory.jpg" data-thumb="images/toystory.jpg" alt="" />
+                  <a href="#"><img src="images/up.jpg" data-thumb="images/up.jpg" alt="" title="This is an example of a caption" /></a>
+                  <img src="images/walle.jpg" data-thumb="images/walle.jpg" alt="" data-transition="slideInLeft" />
+                  <img src="images/nemo.jpg" data-thumb="images/nemo.jpg" alt="" title="#htmlcaption" />
+              </div>
+              <div id="htmlcaption" class="nivo-html-caption">
+                  <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+              </div>
+          </div>
+
+      </div>
 
     <div id="banner">
       
@@ -77,7 +93,7 @@
         </div>
         <div id="box_third" class="float_left">
           <img src="images/app_mobile.png" width="251" height="170" alt="App Mobile">
-          <ul><li><h2>Mobile &amp more...</h2></li></ul>
+          <ul><li><h2>Mobile &amp; more...</h2></li></ul>
           <ul class="content"><li><p>Lorem ipsum suspendisse quam sem et consequat at commodo.</p></li></ul>
           <ul id="button-one">
             <li><a href="#">Learn More</a></li>
@@ -155,5 +171,16 @@
     </footer>
     </div> <!-- end bodywrapper -->
   </body>
-
+  <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+  <script type="text/javascript">
+  $(window).load(function() {
+      $('#slider').nivoSlider();
+      
+      $('.main_nav_item').hover(
+             function(){ $(this).addClass('button-red') },
+             function(){ $(this).removeClass('button-red') }
+      )
+  });
+  </script>
 </html>
